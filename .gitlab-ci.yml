@@ -1,0 +1,17 @@
+stages:
+    - build
+    - test
+mobile-build:
+    tags:
+        - dev-mobile
+    stage: build
+    script:
+        - cd C:\CI-total
+        - mobile-build.bat
+mobile-test:
+    tags:
+        - dev-mobile
+    stage: test
+    script:
+        - cd C:\CI-total
+        - mobile-test.bat

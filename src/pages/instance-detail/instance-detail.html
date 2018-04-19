@@ -1,0 +1,37 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Instance Detail</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <form [formGroup]="instanceForm" (ngSubmit)="saveInstance(instanceForm.value)" novalidate>
+    <ion-list>
+      <ion-item>
+        <button ion-item id="select_template" type="button" (click)="showSearch()"><span
+          float-left>{{templateSelected}}</span><span float-right><ion-icon
+          ios="ios-arrow-dropdown" md="md-arrow-dropdown"></ion-icon></span></button>
+      </ion-item>
+    </ion-list>
+    <div class="search-box" [hidden]="showSearchBox==false">
+      <ion-input id="search_instance" no-border="false" clearInput="true" placeholder="Instance Name" type="text"
+                 (ionBlur)="closeItems()" (ionChange)="getItems()"
+                 [(formControl)]="instanceName" [value]="instanceName.value">
+      </ion-input>
+      <div class="search-result" [hidden]="showInstances==false">
+        <ion-list>
+          <ion-option ion-item *ngFor="let instance of items" (click)="select(instance)">{{instance}}</ion-option>
+        </ion-list>
+      </div>
+    </div>
+    <div>
+      <button id="save_button"   ion-button round float-right  type="submit" [disabled]="!instanceForm.valid || is_selected==false || isbutton_clicked==true">
+        SAVE
+      </button>
+    </div>
+  </form>
+
+</ion-content>

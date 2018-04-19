@@ -1,0 +1,64 @@
+<!--
+  Generated template for the StepsPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+  <ion-toolbar class="step_head_bar">
+    <ion-title>
+      WorkflowSteps
+      <button ion-button round float-right id="btnCreate" class="button-clear-md-dark" (click)="newStep()" [disabled]="!isWorkflowCreated">Create
+      </button>
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content padding>
+  <form [formGroup]="workflowForm" (ngSubmit)="saveWorkflow(workflowForm.value)" novalidate>
+    <ion-list>
+      <div id="input_workflowName" [class.error]="!workflowName.valid && workflowName.touched">
+        <ion-input type="text" [(ngModel)]="wfName" (keyup)="checkInput()"
+                   clearInput="true" maxlength="100" required
+                   placeholder="Workflow Name" [value]="name" [formControl]="workflowName"></ion-input>
+      </div>
+      <div *ngIf="workflowName.hasError('required') && workflowName.touched" class="error-message">* WorkflowName cannot
+        be empty!
+      </div>
+      <div>
+        <button id="save_button" ion-button round float-right type="submit"
+                [disabled]="!workflowForm.valid || isbutton_clicked==true || isWorkflowCreated==true">
+          SAVE
+        </button>
+      </div>
+    </ion-list>
+  </form>
+  <div>
+    <button id="back_button" ion-button round float-right (click)="back()">BACK</button>
+  </div>
+  <div id="showSteps" *ngIf="isWorkflowCreated">
+    <ion-row class="row_head">
+      <ion-col col-5>Number</ion-col>
+      <ion-col col-4>Name</ion-col>
+      <ion-col col-3></ion-col>
+    </ion-row>
+    <ion-row *ngFor="let step of steps;let i = index">
+      <!--<ion-col col-5 *ngIf="step['Id'].length>8">{{step["Id"].substring(0,8)+"..."}}</ion-col>
+      <ion-col col-5 *ngIf="step['Id'].length<=8">{{step["Id"]}}</ion-col>-->
+      <ion-col col-5>{{i+1}}</ion-col>
+      <ion-col col-4>{{step['Name']}}</ion-col>
+      <ion-col col-3>
+        <ion-col col-1>
+          <ion-icon ios="ios-create" md="md-create" (click)="updateStep(step.Name,step.Id)"></ion-icon>
+        </ion-col>
+        <ion-col col-2 id="del">
+          <ion-icon *ngIf="delId!=(step.Id)" ios="ios-trash" md="md-trash"
+                    (click)="confirmDeleteStep(step.Id)"></ion-icon>
+          <ion-icon ios="ios-trash" md="md-trash" *ngIf="delId==step.Id" class="confirm-del"
+                    (click)="confirmDeleteStep(step.Id)"></ion-icon>
+        </ion-col>
+      </ion-col>
+    </ion-row>
+  </div>
+</ion-content>

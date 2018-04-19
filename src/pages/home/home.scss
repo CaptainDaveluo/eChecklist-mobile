@@ -1,0 +1,33 @@
+page-home {
+  .menu-head{
+    font-size: 3em;
+    background: #000000!important;
+    padding: 0.5em;
+    z-index: 20;
+  }
+
+  .user_img{
+    width:4em;
+    height:2em;
+    z-index: 30;
+  }
+
+
+  ion-menu button{
+    background: #222222!important;
+    padding-bottom: 1em!important;
+  }
+
+  ion-menu .selected{
+    background: #222222!important;
+    padding-bottom: 1em!important;
+
+  }
+
+  ion-menu .item-inner{
+    color: white;
+  }
+  ion-menu ion-content .scroll-content{
+    background: #222222!important;
+  }
+}

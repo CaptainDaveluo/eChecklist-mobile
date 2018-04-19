@@ -1,0 +1,51 @@
+<ion-header>
+  <ion-toolbar class="instance_head_bar">
+    <button ion-button menuToggle float-left>
+      <ion-icon ios="ios-menu" md="md-menu" class="menu_icon"></ion-icon>
+    </button>
+    <ion-title>
+      Workflow
+      <button ion-button round float-right id="btnCreate" class="button-clear-md-dark" (click)="newWorkflow()">Create
+      </button>
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+
+    <div class="showInstances">
+      <ion-row class="row_head">
+        <ion-col col-5>Name</ion-col>
+        <ion-col col-4>Modify Date</ion-col>
+      </ion-row>
+      <ion-row *ngFor="let workflow of workflows;let i = index">
+        <ion-col col-5 *ngIf="workflow['Name'].length>8">{{workflow["Name"].substring(0,8)+"..."}}</ion-col>
+        <ion-col col-5 *ngIf="workflow['Name'].length<=8">{{workflow["Name"]}}</ion-col>
+        <ion-col col-4>{{workflow['Modifiedtime'].substring(0,10)+''}}</ion-col>
+        <ion-col col-3>
+          <ion-col col-1>
+            <ion-icon ios="ios-create" md="md-create" (click)="updateWorkFlow(workflow['Name'],workflow['Id'])"></ion-icon>
+          </ion-col>
+          <ion-col col-2 id="del">
+            <ion-icon *ngIf="delId!=(workflow.Id)" ios="ios-trash" md="md-trash" (click)="confirmDeleteWorkFlow(workflow.Id)"></ion-icon>
+            <ion-icon ios="ios-trash" md="md-trash" *ngIf="delId==workflow.Id" class="confirm-del" (click)="confirmDeleteWorkFlow(workflow.Id)"></ion-icon>
+          </ion-col>
+        </ion-col>
+      </ion-row>
+
+    </div>
+
+
+</ion-content>
+
+
+
+<!--<ion-header></ion-header>
+<ion-content>
+  <ion-scroll zooming="true" scrollX="true" scrollY="true" style="width: 500px; height: 500px">
+    <div style="width: 5000px; height: 5000px;">ssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss</div>
+    &lt;!&ndash;<div style="width: 5000px; height: 5000px; background: url('http://www.runoob.com/try/demo_source/Europe_geological_map-en.jpg') repeat"></div>&ndash;&gt;
+  </ion-scroll>
+
+</ion-content>-->
+

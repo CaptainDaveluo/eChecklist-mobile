@@ -1,0 +1,22 @@
+<ion-menu [content]="content" side="left">
+  <ion-content>
+    <div class="menu-head">
+      <img class="user_img" alt="logo" src="./assets/imgs/perficient-logo.png">
+    </div>
+      <ion-list no-lines>
+        <button ion-item (click)="openPage('InstancesPage')">
+            <ion-icon name="clipboard"></ion-icon>
+          Instances
+        </button>
+        <button ion-item (click)="openPage('TemplatePage')">
+            <ion-icon name="copy"></ion-icon>
+          Templates
+        </button>
+        <button ion-item (click)="openPage('WorkFlowPage')">
+            <ion-icon name="calendar"></ion-icon>
+          Workflow
+        </button>
+      </ion-list>
+  </ion-content>
+</ion-menu>
+<ion-nav id="nav" #content [root]="rootPage"></ion-nav>

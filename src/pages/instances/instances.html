@@ -1,0 +1,38 @@
+<ion-header>
+  <ion-toolbar class="instance_head_bar">
+    <button ion-button menuToggle float-left>
+      <ion-icon ios="ios-menu" md="md-menu" class="menu_icon"></ion-icon>
+    </button>
+    <ion-title>
+      Instances
+      <button ion-button round float-right id="btnCreate" class="button-clear-md-dark" (click)="newInstance()">Create
+      </button>
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+  <div class="showInstances">
+    <ion-row class="row_head">
+      <ion-col col-5>Name</ion-col>
+      <ion-col col-4>Template</ion-col>
+      <ion-col col-3></ion-col>
+    </ion-row>
+    <ion-row *ngFor="let instance of instances;let i = index">
+      <ion-col col-5 *ngIf="instance['Name'].length>8">{{instance["Name"].substring(0,8)+"..."}}</ion-col>
+      <ion-col col-5 *ngIf="instance['Name'].length<=8">{{instance["Name"]}}</ion-col>
+      <ion-col col-4>{{instance['Template']}}</ion-col>
+      <ion-col col-3>
+        <ion-col col-1>
+          <ion-icon ios="ios-create" md="md-create" (click)="updateInstance(instance.Name,instance.Id)"></ion-icon>
+        </ion-col>
+        <ion-col col-2 id="del">
+          <ion-icon *ngIf="delId!=(instance.Id)" ios="ios-trash" md="md-trash" (click)="confirmDeleteInstance(instance.Id)"></ion-icon>
+          <ion-icon ios="ios-trash" md="md-trash" *ngIf="delId==instance.Id" class="confirm-del" (click)="confirmDeleteInstance(instance.Id)"></ion-icon>
+        </ion-col>
+      </ion-col>
+    </ion-row>
+
+  </div>
+</ion-content>
+

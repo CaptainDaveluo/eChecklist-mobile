@@ -1,0 +1,638 @@
+{
+  "_id" : "5aa8ce1ab15b802dc80c13be",
+  "_c" : "2018-03-14T07:24:10.000Z",
+  "_m" : -62135596800000,
+  "CreatedBy" : null,
+  "ModifiedBy" : null,
+  "ActiveFlag" : true,
+  "Key" : "Title",
+  "Type" : 1,
+  "Value" : {
+    "_t" : "Label",
+    "Texts" : [
+      {
+        "Language" : "en",
+        "Content" : "Project Closing CheckList"
+      },
+      {
+        "Language" : "cn",
+        "Content" : "工程结束清单"
+      }
+    ]
+  },
+  "Children" : [
+    {
+      "_id" : "5aa8ce1ab15b802dc80c13bf",
+      "_c" : "2018-03-14T07:24:10.000Z",
+      "_m" : -62135596800000,
+      "CreatedBy" : null,
+      "ModifiedBy" : null,
+      "ActiveFlag" : true,
+      "Key" : "Project Info",
+      "Type" : 1,
+      "Value" : {
+        "_t" : "Label",
+        "Texts" : [
+          {
+            "Language" : "en",
+            "Content" : "Project Info"
+          },
+          {
+            "Language" : "cn",
+            "Content" : "工程信息"
+          }
+        ]
+      },
+      "Children" : [
+        {
+          "_id" : "5aa8ce1ab15b802dc80c13c0",
+          "_c" : "2018-03-14T07:24:10.000Z",
+          "_m" : -62135596800000,
+          "CreatedBy" : null,
+          "ModifiedBy" : null,
+          "ActiveFlag" : true,
+          "Key" : null,
+          "Type" : 0,
+          "Value" : null,
+          "Children" : [
+            {
+              "_id" : "5aa8ce1ab15b802dc80c13c1",
+              "_c" : "2018-03-14T07:24:10.000Z",
+              "_m" : -62135596800000,
+              "CreatedBy" : null,
+              "ModifiedBy" : null,
+              "ActiveFlag" : true,
+              "Key" : "Project Name",
+              "Type" : 1,
+              "Value" : {
+                "_t" : "Label",
+                "Texts" : [
+                  {
+                    "Language" : "en",
+                    "Content" : "Project Name"
+                  },
+                  {
+                    "Language" : "cn",
+                    "Content" : "工程名"
+                  }
+                ]
+              },
+              "Children" : null
+            },
+            {
+              "_id" : "5aa8ce1ab15b802dc80c13c2",
+              "_c" : "2018-03-14T07:24:10.000Z",
+              "_m" : -62135596800000,
+              "CreatedBy" : null,
+              "ModifiedBy" : null,
+              "ActiveFlag" : true,
+              "Key" : "Project Name Field",
+              "Type" : 2,
+              "Value" : {
+                "_t" : "Field",
+                "Type" : "input",
+                "DataSource" : null
+              },
+              "Children" : null
+            }
+          ]
+        },
+        {
+          "_id" : "5aa8ce1ab15b802dc80c13c3",
+          "_c" : "2018-03-14T07:24:10.000Z",
+          "_m" : -62135596800000,
+          "CreatedBy" : null,
+          "ModifiedBy" : null,
+          "ActiveFlag" : true,
+          "Key" : null,
+          "Type" : 0,
+          "Value" : null,
+          "Children" : [
+            {
+              "_id" : "5aa8ce1ab15b802dc80c13c4",
+              "_c" : "2018-03-14T07:24:10.000Z",
+              "_m" : -62135596800000,
+              "CreatedBy" : null,
+              "ModifiedBy" : null,
+              "ActiveFlag" : true,
+              "Key" : "Project No",
+              "Type" : 1,
+              "Value" : {
+                "_t" : "Label",
+                "Texts" : [
+                  {
+                    "Language" : "en",
+                    "Content" : "Project No"
+                  },
+                  {
+                    "Language" : "cn",
+                    "Content" : "工程编号"
+                  }
+                ]
+              },
+              "Children" : null
+            },
+            {
+              "_id" : "5aa8ce1ab15b802dc80c13c5",
+              "_c" : "2018-03-14T07:24:10.000Z",
+              "_m" : -62135596800000,
+              "CreatedBy" : null,
+              "ModifiedBy" : null,
+              "ActiveFlag" : true,
+              "Key" : "Project No Field",
+              "Type" : 2,
+              "Value" : {
+                "_t" : "Field",
+                "Type" : "input",
+                "DataSource" : null
+              },
+              "Children" : null
+            }
+          ]
+        },
+        {
+          "_id" : "5aa8ce1ab15b802dc80c13c6",
+          "_c" : "2018-03-14T07:24:10.000Z",
+          "_m" : -62135596800000,
+          "CreatedBy" : null,
+          "ModifiedBy" : null,
+          "ActiveFlag" : true,
+          "Key" : null,
+          "Type" : 0,
+          "Value" : null,
+          "Children" : [
+            {
+              "_id" : "5aa8ce1ab15b802dc80c13c7",
+              "_c" : "2018-03-14T07:24:10.000Z",
+              "_m" : -62135596800000,
+              "CreatedBy" : null,
+              "ModifiedBy" : null,
+              "ActiveFlag" : true,
+              "Key" : "GDC Lead",
+              "Type" : 1,
+              "Value" : {
+                "_t" : "Label",
+                "Texts" : [
+                  {
+                    "Language" : "en",
+                    "Content" : "GDC Lead"
+                  },
+                  {
+                    "Language" : "cn",
+                    "Content" : "工程领队"
+                  }
+                ]
+              },
+              "Children" : null
+            },
+            {
+              "_id" : "5aa8ce1ab15b802dc80c13c8",
+              "_c" : "2018-03-14T07:24:10.000Z",
+              "_m" : -62135596800000,
+              "CreatedBy" : null,
+              "ModifiedBy" : null,
+              "ActiveFlag" : true,
+              "Key" : "GDC Lead Field",
+              "Type" : 2,
+              "Value" : {
+                "_t" : "Field",
+                "Type" : "input",
+                "DataSource" : null
+              },
+              "Children" : null
+            }
+          ]
+        },
+        {
+          "_c" : "2018-03-26T07:24:10.000Z",
+          "_m" : -62135596800000,
+          "CreatedBy" : null,
+          "ModifiedBy" : null,
+          "ActiveFlag" : true,
+          "Key" : null,
+          "Type" : 0,
+          "Value" : null,
+          "Children" : [
+            {
+              "_c" : "2018-03-26T07:24:10.000Z",
+              "_m" : -62135596800000,
+              "CreatedBy" : null,
+              "ModifiedBy" : null,
+              "ActiveFlag" : true,
+              "Key" : "Project End Date",
+              "Type" : 1,
+              "Value" : {
+                "_t" : "Label",
+                "Texts" : [
+                  {
+                    "Language" : "en",
+                    "Content" : "Project End Date"
+                  },
+                  {
+                    "Language" : "cn",
+                    "Content" : "项目结束日期"
+                  }
+                ]
+              },
+              "Children" : null
+            },
+            {
+              "_c" : "2018-03-26T07:24:10.000Z",
+              "_m" : -62135596800000,
+              "CreatedBy" : null,
+              "ModifiedBy" : null,
+              "ActiveFlag" : true,
+              "Key" : "Project End Date Field",
+              "Type" : 2,
+              "Value" : {
+                "_t" : "Field",
+                "Type" : "input",
+                "DataSource" : null
+              },
+              "Children" : null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "_id" : "5aa8ce1ab15b802dc80c13c9",
+      "_c" : "2018-03-14T07:24:10.000Z",
+      "_m" : -62135596800000,
+      "CreatedBy" : null,
+      "ModifiedBy" : null,
+      "ActiveFlag" : true,
+      "Key" : "THead",
+      "Type" : 0,
+      "Value" : null,
+      "Children" : [
+        {
+          "_id" : "5aa8ce1ab15b802dc80c13ca",
+          "_c" : "2018-03-14T07:24:10.000Z",
+          "_m" : -62135596800000,
+          "CreatedBy" : null,
+          "ModifiedBy" : null,
+          "ActiveFlag" : true,
+          "Key" : "Department",
+          "Type" : 1,
+          "Value" : {
+            "_t" : "Label",
+            "Texts" : [
+              {
+                "Language" : "en",
+                "Content" : "Department"
+              },
+              {
+                "Language" : "cn",
+                "Content" : "部门"
+              }
+            ]
+          },
+          "Children" : null
+        },
+        {
+          "_id" : "5aa8ce1ab15b802dc80c13cb",
+          "_c" : "2018-03-14T07:24:10.000Z",
+          "_m" : -62135596800000,
+          "CreatedBy" : null,
+          "ModifiedBy" : null,
+          "ActiveFlag" : true,
+          "Key" : "Department",
+          "Type" : 1,
+          "Value" : {
+            "_t" : "Label",
+            "Texts" : [
+              {
+                "Language" : "en",
+                "Content" : "Activities"
+              },
+              {
+                "Language" : "cn",
+                "Content" : "活动"
+              }
+            ]
+          },
+          "Children" : null
+        },
+        {
+          "_id" : "5aa8ce1ab15b802dc80c13cc",
+          "_c" : "2018-03-14T07:24:10.000Z",
+          "_m" : -62135596800000,
+          "CreatedBy" : null,
+          "ModifiedBy" : null,
+          "ActiveFlag" : true,
+          "Key" : "Department",
+          "Type" : 1,
+          "Value" : {
+            "_t" : "Label",
+            "Texts" : [
+              {
+                "Language" : "en",
+                "Content" : "Status"
+              },
+              {
+                "Language" : "cn",
+                "Content" : "状态"
+              }
+            ]
+          },
+          "Children" : null
+        },
+        {
+          "_id" : "5aa8ce1ab15b802dc80c13cd",
+          "_c" : "2018-03-14T07:24:10.000Z",
+          "_m" : -62135596800000,
+          "CreatedBy" : null,
+          "ModifiedBy" : null,
+          "ActiveFlag" : true,
+          "Key" : "Department",
+          "Type" : 1,
+          "Value" : {
+            "_t" : "Label",
+            "Texts" : [
+              {
+                "Language" : "en",
+                "Content" : "Comment"
+              },
+              {
+                "Language" : "cn",
+                "Content" : "评价"
+              }
+            ]
+          },
+          "Children" : null
+        }
+      ]
+    },
+    {
+      "_id" : "5aa8ce1ab15b802dc80c13ce",
+      "_c" : "2018-03-14T07:24:10.000Z",
+      "_m" : -62135596800000,
+      "CreatedBy" : null,
+      "ModifiedBy" : null,
+      "ActiveFlag" : true,
+      "Key" : "TBody",
+      "Type" : 0,
+      "Value" : null,
+      "Children" : [
+        {
+          "_id" : "5aa8ce1ab15b802dc80c13cf",
+          "_c" : "2018-03-14T07:24:10.000Z",
+          "_m" : -62135596800000,
+          "CreatedBy" : null,
+          "ModifiedBy" : null,
+          "ActiveFlag" : true,
+          "Key" : "GDC PMO",
+          "Type" : 1,
+          "Value" : {
+            "_t" : "Label",
+            "Texts" : [
+              {
+                "Language" : "en",
+                "Content" : "GDC PMO"
+              },
+              {
+                "Language" : "cn",
+                "Content" : "GDC PMO"
+              }
+            ]
+          },
+          "Children" : [
+            {
+              "_id" : "5aa8ce1ab15b802dc80c13d0",
+              "_c" : "2018-03-14T07:24:10.000Z",
+              "_m" : -62135596800000,
+              "CreatedBy" : null,
+              "ModifiedBy" : null,
+              "ActiveFlag" : true,
+              "Key" : null,
+              "Type" : 0,
+              "Value" : null,
+              "Children" : [
+                {
+                  "_id" : "5aa8ce1ab15b802dc80c13d1",
+                  "_c" : "2018-03-14T07:24:10.000Z",
+                  "_m" : -62135596800000,
+                  "CreatedBy" : null,
+                  "ModifiedBy" : null,
+                  "ActiveFlag" : true,
+                  "Key" : "Activities",
+                  "Type" : 1,
+                  "Value" : {
+                    "_t" : "Label",
+                    "Texts" : [
+                      {
+                        "Language" : "en",
+                        "Content" : "Create case study for the project"
+                      },
+                      {
+                        "Language" : "cn",
+                        "Content" : "研究项目案例"
+                      }
+                    ]
+                  },
+                  "Children" : null
+                },
+                {
+                  "_id" : "5aa8ce1ab15b802dc80c13d2",
+                  "_c" : "2018-03-14T07:24:10.000Z",
+                  "_m" : -62135596800000,
+                  "CreatedBy" : null,
+                  "ModifiedBy" : null,
+                  "ActiveFlag" : true,
+                  "Key" : "Status",
+                  "Type" : 2,
+                  "Value" : {
+                    "_t" : "Field",
+                    "Type" : "input",
+                    "DataSource" : null
+                  },
+                  "Children" : null
+                },
+                {
+                  "_id" : "5aa8ce1ab15b802dc80c13d3",
+                  "_c" : "2018-03-14T07:24:10.000Z",
+                  "_m" : -62135596800000,
+                  "CreatedBy" : null,
+                  "ModifiedBy" : null,
+                  "ActiveFlag" : true,
+                  "Key" : "Comment",
+                  "Type" : 2,
+                  "Value" : {
+                    "_t" : "Field",
+                    "Type" : "input",
+                    "DataSource" : null
+                  },
+                  "Children" : null
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "_id" : "5aa8ce1ab15b802dc80c13d4",
+          "_c" : "2018-03-14T07:24:10.000Z",
+          "_m" : -62135596800000,
+          "CreatedBy" : null,
+          "ModifiedBy" : null,
+          "ActiveFlag" : true,
+          "Key" : "IT",
+          "Type" : 1,
+          "Value" : {
+            "_t" : "Label",
+            "Texts" : [
+              {
+                "Language" : "en",
+                "Content" : "IT"
+              },
+              {
+                "Language" : "cn",
+                "Content" : "IT"
+              }
+            ]
+          },
+          "Children" : [
+            {
+              "_id" : "5aa8ce1ab15b802dc80c13d5",
+              "_c" : "2018-03-14T07:24:10.000Z",
+              "_m" : -62135596800000,
+              "CreatedBy" : null,
+              "ModifiedBy" : null,
+              "ActiveFlag" : true,
+              "Key" : null,
+              "Type" : 0,
+              "Value" : null,
+              "Children" : [
+                {
+                  "_id" : "5aa8ce1ab15b802dc80c13d6",
+                  "_c" : "2018-03-14T07:24:10.000Z",
+                  "_m" : -62135596800000,
+                  "CreatedBy" : null,
+                  "ModifiedBy" : null,
+                  "ActiveFlag" : true,
+                  "Key" : "Activities",
+                  "Type" : 1,
+                  "Value" : {
+                    "_t" : "Label",
+                    "Texts" : [
+                      {
+                        "Language" : "en",
+                        "Content" : "Recycle resources"
+                      },
+                      {
+                        "Language" : "cn",
+                        "Content" : "回收资源"
+                      }
+                    ]
+                  },
+                  "Children" : null
+                },
+                {
+                  "_id" : "5aa8ce1ab15b802dc80c13d7",
+                  "_c" : "2018-03-14T07:24:10.000Z",
+                  "_m" : -62135596800000,
+                  "CreatedBy" : null,
+                  "ModifiedBy" : null,
+                  "ActiveFlag" : true,
+                  "Key" : "Status",
+                  "Type" : 2,
+                  "Value" : {
+                    "_t" : "Field",
+                    "Type" : "input",
+                    "DataSource" : null
+                  },
+                  "Children" : null
+                },
+                {
+                  "_id" : "5aa8ce1ab15b802dc80c13d8",
+                  "_c" : "2018-03-14T07:24:10.000Z",
+                  "_m" : -62135596800000,
+                  "CreatedBy" : null,
+                  "ModifiedBy" : null,
+                  "ActiveFlag" : true,
+                  "Key" : "Comment",
+                  "Type" : 2,
+                  "Value" : {
+                    "_t" : "Field",
+                    "Type" : "input",
+                    "DataSource" : null
+                  },
+                  "Children" : null
+                }
+              ]
+            },
+            {
+              "_id" : "5aa8ce1ab15b802dc80c13d9",
+              "_c" : "2018-03-14T07:24:10.000Z",
+              "_m" : -62135596800000,
+              "CreatedBy" : null,
+              "ModifiedBy" : null,
+              "ActiveFlag" : true,
+              "Key" : null,
+              "Type" : 0,
+              "Value" : null,
+              "Children" : [
+                {
+                  "_id" : "5aa8ce1ab15b802dc80c13da",
+                  "_c" : "2018-03-14T07:24:10.000Z",
+                  "_m" : -62135596800000,
+                  "CreatedBy" : null,
+                  "ModifiedBy" : null,
+                  "ActiveFlag" : true,
+                  "Key" : "Activities",
+                  "Type" : 1,
+                  "Value" : {
+                    "_t" : "Label",
+                    "Texts" : [
+                      {
+                        "Language" : "en",
+                        "Content" : "Help archive assets"
+                      },
+                      {
+                        "Language" : "cn",
+                        "Content" : "资产管理"
+                      }
+                    ]
+                  },
+                  "Children" : null
+                },
+                {
+                  "_id" : "5aa8ce1ab15b802dc80c13db",
+                  "_c" : "2018-03-14T07:24:10.000Z",
+                  "_m" : -62135596800000,
+                  "CreatedBy" : null,
+                  "ModifiedBy" : null,
+                  "ActiveFlag" : true,
+                  "Key" : "Status",
+                  "Type" : 2,
+                  "Value" : {
+                    "_t" : "Field",
+                    "Type" : "input",
+                    "DataSource" : null
+                  },
+                  "Children" : null
+                },
+                {
+                  "_id" : "5aa8ce1ab15b802dc80c13dc",
+                  "_c" : "2018-03-14T07:24:10.000Z",
+                  "_m" : -62135596800000,
+                  "CreatedBy" : null,
+                  "ModifiedBy" : null,
+                  "ActiveFlag" : true,
+                  "Key" : "Comment",
+                  "Type" : 2,
+                  "Value" : {
+                    "_t" : "Field",
+                    "Type" : "input",
+                    "DataSource" : null
+                  },
+                  "Children" : null
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,86 @@
+page-steps {
+  ion-row {
+    height: 2em;
+  }
+  .row_head {
+    margin-top: 1.0em;
+    font-size: 1.2em;
+  }
+  #del {
+    margin-left: 10px;
+
+  }
+
+
+  #input_workflowName{
+    background: #f5f5F5;
+    border-radius: 1em;
+    width: 89%;
+    padding-left: 8px; //光标位置
+    position:relative;
+    left: 15px; //输入框位置
+    //top:-3px;
+    text-decoration: none;
+  }
+
+  .confirm-del {
+    color: #f30d0d;
+    font-size: 2em;
+    left: 5%;
+    top: -0.1em;
+    position: absolute;
+    @include bounceIn();
+  }
+  .toolbar-title-md {
+    color: white;
+  }
+
+  .toolbar-background-md {
+    background: #111111 !important;
+  }
+  .menu_icon {
+    color: #ffffff;
+  }
+  #save_button {
+    color: white;
+    background: green;
+    top: 10px;
+    right:2em;
+  }
+  #btnCreate{
+    background:whitesmoke;
+  }
+  #input_workflowName {
+    background: #f5f5F5;
+    border-radius: 1em;
+    width: 89%;
+    padding-left: 4px; //光标位置
+    position: relative;
+    left: 8px; //输入框位置
+    //top:-3px;
+    text-decoration: none;
+  }
+  #input_workflow {
+    //background: #f5f5F5;
+    //border-radius: 1em;
+    width: 88%;
+    padding-left: 4px; //光标位置
+    position: absolute;
+    left: 4px; //输入框位置
+    text-decoration: none;
+  }
+  .error-message {
+    margin-left: 1em;
+    color: #f30d0d;
+  }
+  #back_button {
+    color: white;
+    background: #f30d0d;
+    top: -0.4em;
+    right: 2em;
+  }
+
+  #showSteps{
+    margin-top: 5em;
+  }
+}

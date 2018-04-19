@@ -1,0 +1,75 @@
+page-new-instance {
+  .error-message {
+    margin-left: 1em;
+    color: #f30d0d;
+  }
+  ion-searchbar {
+    padding-bottom: 0 !important;
+  }
+
+  .search-result {
+    width: 80%;
+    margin: 0;
+    padding: 0px 8px 8px 2em;
+    max-lines: 5;
+    position: absolute;
+    left:0px;
+    top: 200px;
+    z-index: 99;
+    border-radius: 1em;
+  }
+
+  .search-result ion-option {
+    background: #fdfdfd;
+  }
+
+  .input-wrapper .label {
+    margin-bottom: 0;
+  }
+
+  .search-box {
+    width: 80%;
+  }
+
+  .search-box ion-input {
+    margin-top: 0;
+    padding-top: 0;
+    padding-left: 6%;
+  }
+  #input_instanceName{
+    background: #f5f5F5;
+    border-radius: 1em;
+    width: 95%;
+    padding-left: 8px; //光标位置
+    position:relative;
+    left: 12px; //输入框位置
+    //top:-3px;
+    text-decoration: none;
+  }
+  #select_template {
+    position: absolute;
+    left: 6px;
+    top: 5px;
+    z-index: 0;
+  }
+
+  #search_template {
+    background: #f5f5F5;
+    border-radius: 1em;
+    width: 88%;
+    padding-left: 8px; //光标位置
+    position: absolute;
+    left: 24px; //输入框位置
+  }
+  #save_button {
+    background:whitesmoke;
+    color:#000000;
+  }
+  .item-small {
+    min-height:4em;
+    //border-bottom: 0.55px solid #c8c7cc;
+  }
+  #hhh{
+    color:#FFFFFF;
+  }
+}

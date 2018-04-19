@@ -1,0 +1,64 @@
+<!--
+  Generated template for the StepDetailPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+  <ion-toolbar class="step_head_bar">
+    <ion-title>
+      StepDetail
+      <button ion-button round float-right id="btnCreate" class="button-clear-md-dark" (click)="newInstanceDetal()">Create
+      </button>
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content padding>
+  <form [formGroup]="stepForm" (ngSubmit)="saveStep(stepForm.value)" novalidate>
+    <ion-list>
+      <div id="input_stepName" [class.error]="!stepName.valid && stepName.touched">
+        <ion-input type="text" [(ngModel)]="stName" (keyup)="checkInput()"
+                   clearInput="true" maxlength="100" required
+                   placeholder="Step Name" [value]="name" [formControl]="stepName"></ion-input>
+      </div>
+      <div *ngIf="stepName.hasError('required') && stepName.touched" class="error-message">* StepName cannot be empty!
+      </div>
+      <div>
+        <button id="save_button" ion-button round float-right type="submit"
+                [disabled]="!stepForm.valid || isbutton_clicked==true || isStepCreated==true">
+          SAVE
+        </button>
+      </div>
+    </ion-list>
+
+  </form>
+  <div>
+    <button id="back_button" ion-button round float-right (click)="back()">BACK</button>
+  </div>
+  <div id="showInstances" *ngIf="isStepCreated">
+    <ion-row class="row_head">
+      <ion-col col-5>Name</ion-col>
+      <ion-col col-4>Template</ion-col>
+      <ion-col col-3></ion-col>
+    </ion-row>
+    <ion-row *ngFor="let instance of instances;let i = index">
+      <ion-col col-5 *ngIf="instance['Name'].length>8">{{instance["Name"].substring(0,8)+"..."}}</ion-col>
+      <ion-col col-5 *ngIf="instance['Name'].length<=8">{{instance["Name"]}}</ion-col>
+      <ion-col col-4>{{instance['Template']}}</ion-col>
+      <ion-col col-3>
+        <ion-col col-1>
+          <ion-icon ios="ios-create" md="md-create" (click)="updateInstance(instance.Name,instance.Id)"></ion-icon>
+        </ion-col>
+        <ion-col col-2 id="del">
+          <ion-icon *ngIf="delId!=(instance.Id)" ios="ios-trash" md="md-trash"
+                    (click)="confirmDeleteInstance(instance.Id)"></ion-icon>
+          <ion-icon ios="ios-trash" md="md-trash" *ngIf="delId==instance.Id" class="confirm-del"
+                    (click)="confirmDeleteInstance(instance.Id)"></ion-icon>
+        </ion-col>
+      </ion-col>
+    </ion-row>
+
+  </div>
+</ion-content>

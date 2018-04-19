@@ -1,0 +1,45 @@
+page-instance-detail {
+  .search-box ion-input {
+    margin-top: 0;
+    padding-top: 0;
+    padding-left: 6%;
+  }
+  #search_instance {
+    background: #f5f5F5;
+    border-radius: 1em;
+    width: 88%;
+    padding-left: 8px; //cursor location
+    position: absolute;
+    left: 24px; //input location
+  }
+
+  .search-result {
+    width: 80%;
+    margin: 0;
+    padding: 0px 8px 8px 2em;
+    max-lines: 5;
+    position: absolute;
+    left:0px;
+    top: 10em;
+    z-index: 99;
+    border-radius: 1em;
+  }
+
+  .search-result ion-option {
+    background: #fdfdfd;
+  }
+
+
+
+  #select_template {
+    position: absolute;
+    left: 6px;
+    top: 5px;
+  }
+
+  #save_button {
+    color:#000000;
+    background:whitesmoke;
+    top: 400px;
+  }
+}

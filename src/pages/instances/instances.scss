@@ -1,0 +1,48 @@
+page-instances {
+  ion-row{
+    height:2em;
+  }
+  .row_head{
+    margin-top: 1.0em;
+    font-size:1.2em;
+  }
+
+  #btnCreate{
+    background:whitesmoke;
+  }
+
+  #del{
+    margin-left: 10px;
+
+  }
+
+  .confirm-del{
+    color: #f30d0d;
+    font-size: 2em;
+    left:5%;
+    top: -0.1em;
+    position: absolute;
+    @include bounceIn();
+  }
+
+}
+
+.toast-style {
+  >div{
+  text-align:center;
+  border-radius: 1em;
+  }
+}
+
+.toolbar-title-md{
+  color: white;
+}
+
+.toolbar-background-md{
+  background: #111111!important;
+}
+
+
+.menu_icon{
+  color:#ffffff;
+}
